@@ -5,14 +5,63 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>CreateProfile</ion-title>
-  </ion-navbar>
-
+    <ion-toolbar>
+        <ion-buttons start>
+            <button ion-button icon-only color="primary">
+          <ion-icon name="close"></ion-icon>
+        </button>
+        </ion-buttons>
+        <ion-buttons end>
+            <button ion-button color="primary">
+          LOGIN
+        </button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
+    <h4>Create A New Profile</h4>
+    <h6>Fill the fields below to create a new account</h6>
+
+    <ion-list>
+
+        <ion-item>
+            <ion-label fixed>Email Address</ion-label>
+            <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Username</ion-label>
+            <ion-input type="text" value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Password</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <h6>Other Details</h6>
+
+        <ion-item>
+            <ion-label fixed>First Name</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Last Name</ion-label>
+            <ion-input type="text" value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Phone Number</ion-label>
+            <ion-input type="phone"></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+
+    <button ion-button round full>Create Profile</button>
+    <h6>www.stallionhaulage.com v1.0.1</h6>
 
 </ion-content>
