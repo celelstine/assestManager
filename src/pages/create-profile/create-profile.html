@@ -8,13 +8,13 @@
     <ion-toolbar>
         <ion-buttons start>
             <button ion-button icon-only color="primary">
-          <ion-icon name="close"></ion-icon>
-        </button>
+                <ion-icon name="close"></ion-icon>
+            </button>
         </ion-buttons>
         <ion-buttons end>
-            <button ion-button color="primary">
-          LOGIN
-        </button>
+            <button ion-button color="primary" [navPush]="homePage">
+                LOGIN
+            </button>
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
@@ -61,7 +61,7 @@
     </ion-list>
 
 
-    <button ion-button round full>Create Profile</button>
+    <button ion-button round [navPush]="homePage">Create Profile</button>
     <h6>www.stallionhaulage.com v1.0.1</h6>
 
 </ion-content>
