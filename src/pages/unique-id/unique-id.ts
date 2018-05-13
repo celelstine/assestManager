@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { CreateProfilePage } from '../create-profile/create-profile';
+
 /**
  * Generated class for the UniqueIdPage page.
  *
@@ -14,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'unique-id.html',
 })
 export class UniqueIdPage {
+  createProfilePage = CreateProfilePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
