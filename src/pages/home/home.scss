@@ -5,9 +5,10 @@ page-home {
     h4 {
         font-size: 14px
     }
-    .button-round-md {
-        border-radius: 8px;
-    }
+}
+
+.button-round-md {
+    border-radius: 8px;
 }
 
 .container {
@@ -20,6 +21,7 @@ page-home {
     width: 80%;
     padding-top: 50px;
     margin: auto;
+    text-align: center;
 }
 
 .create-profile-lbl {
