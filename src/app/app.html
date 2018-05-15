@@ -1,18 +1,64 @@
 <ion-menu [content]="content" persistent="true">
     <ion-header>
         <ion-toolbar>
-            <ion-title>
-                Stallion Haulage
-                <h6 style="font-size: smaller">info@stallionhaulage.com</h6>
+            <ion-title class="side-menu-header">
+                <ion-grid class="no-padding-bottom">
+                    <ion-row>
+                        <ion-col style="align-self: flex-end;" col-8>
+                            Stallion Haulage
+                            <h6 class="smaller-text no-margin-y">info@stallionhaulage.com</h6>
+                        </ion-col>
+                        <ion-col class="no-padding-bottom" col-4>
+                                <img class="logo-img" src="assets/imgs/logo-holder.jpg" />
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
             </ion-title>
         </ion-toolbar>
     </ion-header>
 
     <ion-content>
         <ion-list>
-            <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Profile
+            </button>
+
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Assets
+            </button>
+
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Reports
+            </button>
+        
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Documentation
+            </button>
+
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Chart
+            </button>
+
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Support
+            </button>
+
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Refer a client
+            </button>
+
+            <button menuClose ion-item style="font-size: large" (click)="openPage(dashboardPage)">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                &nbsp; &nbsp; Contact us
+            </button>
         </ion-list>
     </ion-content>
 

@@ -1,40 +1,38 @@
 <ion-content padding>
     <div class="create-profile-container">
-        <h4>Create A New Profile</h4>
-        <h6 style="font-size: small">Fill the fields below to create a new account</h6>
+        <h4  class="bold-text">
+            Create A New Profile
+        </h4>
+        <h6 class="bold-text" style="font-size: small">
+            Fill the fields below to create a new account
+        </h6>
 
         <ion-list>
 
             <ion-item>
-                <ion-label fixed>Email Address</ion-label>
-                <ion-input type="email"></ion-input>
+                <ion-input type="email" placeholder="Email Address"></ion-input>
             </ion-item>
 
             <ion-item>
-                <ion-label fixed>Username</ion-label>
-                <ion-input type="text" value=""></ion-input>
+                <ion-input type="text" value="" placeholder="Username"></ion-input>
             </ion-item>
 
             <ion-item>
-                <ion-label fixed>Password</ion-label>
-                <ion-input type="password"></ion-input>
+                <ion-input type="password" placeholder="password"></ion-input>
             </ion-item>
 
             <h6>Other Details</h6>
 
             <ion-item>
-                <ion-label fixed>First Name</ion-label>
-                <ion-input type="text"></ion-input>
+                <ion-input type="text" placeholder="first name"></ion-input>
             </ion-item>
 
             <ion-item>
-                <ion-label fixed>Last Name</ion-label>
-                <ion-input type="text" value=""></ion-input>
+                <ion-input type="text" value="" placeholder="last name"></ion-input>
             </ion-item>
 
             <ion-item>
-                <ion-label fixed>Phone Number</ion-label>
-                <ion-input type="phone"></ion-input>
+                <ion-input type="phone" placeholder="phone number"></ion-input>
             </ion-item>
 
         </ion-list>
@@ -45,7 +43,7 @@
         <p class="create-profile-lbl">
             OR login if you already have an account.
         </p>
-        <button ion-button round [navPush]="homePage">LOGIN</button>
+        <button ion-button round class="smaller-text" [navPush]="homePage">LOGIN</button>
     </div>
     <div class="footer">
         <h6 style="font-size: smaller">www.stallionhaulage.com v1.0.1</h6>
