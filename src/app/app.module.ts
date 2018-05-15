@@ -12,7 +12,8 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Network } from '@ionic-native/network';
-import { Toast } from '@ionic-native/toast';
+import { SpinnerDialog } from '@ionic-native/spinner-dialog';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { Toast } from '@ionic-native/toast';
     StatusBar,
     SplashScreen,
     Network,
-    Toast,
+    SpinnerDialog,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
