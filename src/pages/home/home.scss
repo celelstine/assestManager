@@ -1,3 +1,32 @@
 page-home {
+    h3 {
+        color: primary;
+    }
+    h4 {
+        font-size: 14px
+    }
+}
 
+.button-round-md {
+    border-radius: 8px;
+}
+
+.container {
+    margin-top: 90px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.form-container {
+    width: 80%;
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.create-profile-lbl {
+    color: #5c5c9c; //#333399;
+    font-size: 12px;
+    border-bottom: 1px solid #b7adad;
+    font-weight: bold;
 }
