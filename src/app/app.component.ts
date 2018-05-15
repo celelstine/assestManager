@@ -2,6 +2,9 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Network } from '@ionic-native/network';
+import { ToastController } from 'ionic-angular';
+
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -17,9 +20,27 @@ export class MyApp {
   rootPage: any = HomePage;
   dashboardPage: any = DashboardPage;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(
+    public platform: Platform,
+    public statusBar: StatusBar,
+    public splashScreen: SplashScreen,
+    private network: Network,
+    public toastCtrl: ToastController
+  ) {
     this.initializeApp();
 
+    let toast = this.toastCtrl.create({
+      message: 'Network was disconnected, please turn on your internet connection',
+      duration: 60000,
+      position: 'center',
+      showCloseButton: true
+    });
+    this.network.onDisconnect().subscribe(() => {
+      toast.present();
+    });
+    this.network.onConnect().subscribe(() => {
+      toast.dismiss();
+    });
   }
 
   initializeApp() {
@@ -28,6 +49,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      
     });
   }
 
@@ -36,4 +58,6 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page);
   }
+  // watch network for a disconnect
+ 
 }

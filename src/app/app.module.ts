@@ -11,6 +11,8 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Network } from '@ionic-native/network';
+import { Toast } from '@ionic-native/toast';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    Network,
+    Toast,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

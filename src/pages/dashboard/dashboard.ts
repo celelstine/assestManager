@@ -19,7 +19,6 @@ export class DashboardPage {
   }
 
   loadMap(){
-    console.log("came here")
     let latLng = new google.maps.LatLng(-34.9290, 138.6010);
  
     let mapOptions = {
