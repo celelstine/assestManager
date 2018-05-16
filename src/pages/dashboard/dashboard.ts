@@ -64,30 +64,6 @@ export class DashboardPage {
       animation: google.maps.Animation.DROP,
       position: latLng
     });
-
-    // let content = `
-    // <h4  style="background: orange; color:white">${header}</h4>
-    // <table>
-    //   <tr>
-    //     <td>
-    //     </td>
-    //     <td>
-    //       <p>   
-    //         <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon> ${date}
-    //       </p>
-    //       <p>   
-    //         <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon> ${address}
-    //       </p>
-    //       <p>   
-    //         <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon> ${speed}
-    //       </p>
-            
-    //     </td>
-    //   </tr>
-    // </table>
-    
-    // `;
-
     var contentString = `
       <div id="content">
         <div
