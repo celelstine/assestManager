@@ -9,7 +9,9 @@ import { CreateProfilePage } from '../pages/create-profile/create-profile';
 import { UniqueIdPage } from '../pages/unique-id/unique-id';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { AdminUniquecodePage } from '../pages/admin-uniquecode/admin-uniquecode';
-
+import  { ContactUsPage } from '../pages/contact-us/contact-us';
+import { SupportPage } from '../pages/support/support';
+import { ReferClientPage } from '../pages/refer-client/refer-client';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +27,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     CreateProfilePage,
     UniqueIdPage,
     DashboardPage,
-    AdminUniquecodePage
+    AdminUniquecodePage,
+    ContactUsPage,
+    SupportPage,
+    ReferClientPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,10 @@ import { Geolocation } from '@ionic-native/geolocation';
     CreateProfilePage,
     UniqueIdPage,
     DashboardPage,
-    AdminUniquecodePage
+    AdminUniquecodePage,
+    ContactUsPage,
+    SupportPage,
+    ReferClientPage
   ],
   providers: [
     StatusBar,

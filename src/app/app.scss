@@ -35,6 +35,10 @@ ion-title {
 .bold-text {
     font-weight: bold;
 }
+.form-heading {
+    text-align: center;
+    color: #333399;
+  }
 .smaller-text {
     font-size: smaller
 }
@@ -61,4 +65,15 @@ ion-title {
 .logo-img {
     border-radius:50%;
     max-width: 50px;
+}
+
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner {
+  border-bottom: 0 !important;
+}
+
+.list-md .item-input.item-input-has-focus:last-child,
+.list-md .item-input.input-has-focus:last-child,
+.item-input-has-focus textarea {
+    border-bottom: 0 !important;
 }

@@ -1,0 +1,12 @@
+page-support {
+  .text-input-md {
+    margin: 0;
+    padding: 5;
+    width: 100%;
+    min-height: 150px;
+    border: 2px solid #333399;
+  }
+  .list-md .item-input:last-child {
+    border-bottom: 0px;
+  }
+}
