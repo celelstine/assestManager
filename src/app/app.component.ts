@@ -10,6 +10,9 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { AdminUniquecodePage } from '../pages/admin-uniquecode/admin-uniquecode';
+import  { ContactUsPage } from '../pages/contact-us/contact-us';
+import { SupportPage } from '../pages/support/support';
+import { ReferClientPage } from '../pages/refer-client/refer-client';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,7 +22,10 @@ export class MyApp {
 
   rootPage: any = HomePage;
   dashboardPage: any = DashboardPage;
-  adminUniquecodePage:any = AdminUniquecodePage
+  adminUniquecodePage:any = AdminUniquecodePage;
+  contactUsPage:any = ContactUsPage;
+  supportPage: any = SupportPage;
+  referClientPage: any = ReferClientPage;
 
   constructor(
     public platform: Platform,
