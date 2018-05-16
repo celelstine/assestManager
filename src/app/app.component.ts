@@ -9,7 +9,7 @@ import { ToastController } from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { DashboardPage } from '../pages/dashboard/dashboard';
-
+import { AdminUniquecodePage } from '../pages/admin-uniquecode/admin-uniquecode';
 
 @Component({
   templateUrl: 'app.html'
@@ -19,6 +19,7 @@ export class MyApp {
 
   rootPage: any = HomePage;
   dashboardPage: any = DashboardPage;
+  adminUniquecodePage:any = AdminUniquecodePage
 
   constructor(
     public platform: Platform,
@@ -56,8 +57,7 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page);
+    this.nav.push(page);
   }
-  // watch network for a disconnect
  
 }
