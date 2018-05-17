@@ -12,6 +12,7 @@ import { AdminUniquecodePage } from '../pages/admin-uniquecode/admin-uniquecode'
 import  { ContactUsPage } from '../pages/contact-us/contact-us';
 import { SupportPage } from '../pages/support/support';
 import { ReferClientPage } from '../pages/refer-client/refer-client';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     AdminUniquecodePage,
     ContactUsPage,
     SupportPage,
-    ReferClientPage
+    ReferClientPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { Geolocation } from '@ionic-native/geolocation';
     AdminUniquecodePage,
     ContactUsPage,
     SupportPage,
-    ReferClientPage
+    ReferClientPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
