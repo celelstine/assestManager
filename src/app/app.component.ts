@@ -13,6 +13,7 @@ import { AdminUniquecodePage } from '../pages/admin-uniquecode/admin-uniquecode'
 import  { ContactUsPage } from '../pages/contact-us/contact-us';
 import { SupportPage } from '../pages/support/support';
 import { ReferClientPage } from '../pages/refer-client/refer-client';
+import { ProfilePage } from '../pages/profile/profile';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,6 +27,7 @@ export class MyApp {
   contactUsPage:any = ContactUsPage;
   supportPage: any = SupportPage;
   referClientPage: any = ReferClientPage;
+  profilePage: any = ProfilePage;
 
   constructor(
     public platform: Platform,

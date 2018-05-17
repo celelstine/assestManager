@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar [hideBackButton]="true">
+        <button ion-button [menuToggle]>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Profile</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div class="profile-container">
+        <div class="user-icon">
+            <ion-icon ios="ios-contact" md="ios-contact"></ion-icon>
+        </div>
+        <h4>User Name</h4>
+    </div>
+    <div class="user-contact">
+        <div class="icon-fonts">
+            <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+            &nbsp; &nbsp; Email
+        </div>
+        <div class="icon-fonts">
+            <ion-icon ios="ios-contact" md="ios-contact"></ion-icon>
+            &nbsp; &nbsp; First Name
+        </div>
+        <div class="icon-fonts">
+            <ion-icon ios="ios-contact" md="ios-contact"></ion-icon>
+            &nbsp; &nbsp; Lastname
+        </div>
+        <div class="icon-fonts">
+            <ion-icon ios="ios-call" md="md-call"></ion-icon>
+            &nbsp; &nbsp; Phone Number
+        </div>
+        <div class="icon-fonts">
+            <ion-icon ios="ios-key" md="md-key"></ion-icon>
+            &nbsp; &nbsp; Unique Code
+        </div>
+    </div>
+    <div class="btn-edit user-contact">
+        <button ion-button round full>
+            Edit 
+        </button>
+    </div>
+    <div class="footer">
+        <h6 style="font-size: smaller">www.stallionhaulage.com v1.0.1</h6>
+    </div>
+
+</ion-content>
