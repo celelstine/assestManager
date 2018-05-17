@@ -1,3 +1,21 @@
-page-profile {
-
-}
+    page-profile {
+        .user-icon {
+            font-size: 90px;
+        }
+        ion-icon {
+            color: #333399;
+        }
+        .icon-fonts {
+            font-size: 18px;
+            padding: 10px;
+        }
+        .profile-container {
+            text-align: center;
+        }
+        .user-contact {
+            margin-top: 20px;
+        }
+        .btn-edit {
+            text-align: center;
+        }
+    }
