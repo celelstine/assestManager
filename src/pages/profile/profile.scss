@@ -5,6 +5,10 @@
         ion-icon {
             color: #333399;
         }
+        ion-input {
+            display: inline-block;
+            width: 80%;
+        }
         .icon-fonts {
             font-size: 18px;
             padding: 10px;
@@ -13,7 +17,11 @@
             text-align: center;
         }
         .user-contact {
-            margin-top: 20px;
+            padding-top: 20px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            max-width: 400px;
         }
         .btn-edit {
             text-align: center;

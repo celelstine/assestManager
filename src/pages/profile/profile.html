@@ -13,37 +13,71 @@
         <div class="user-icon">
             <ion-icon ios="ios-contact" md="ios-contact"></ion-icon>
         </div>
-        <h4>User Name</h4>
+        <h4>{{username}}</h4>
     </div>
     <div class="user-contact">
         <div class="icon-fonts">
             <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
-            &nbsp; &nbsp; Email
+            <span *ngIf="!editForm"> &nbsp; &nbsp; {{email}} </span>
+            <ion-input
+                *ngIf="editForm"
+                type="email"
+                placeholder="email"
+                [(ngModel)]="email">
+            </ion-input>
         </div>
+
         <div class="icon-fonts">
             <ion-icon ios="ios-contact" md="ios-contact"></ion-icon>
-            &nbsp; &nbsp; First Name
+            <span *ngIf="!editForm"> &nbsp; &nbsp; {{firstname}} </span>
+            <ion-input
+                *ngIf="editForm"
+                type="text"
+                placeholder="firstname"
+                [(ngModel)]="firstname">
+            </ion-input>
         </div>
+
         <div class="icon-fonts">
             <ion-icon ios="ios-contact" md="ios-contact"></ion-icon>
-            &nbsp; &nbsp; Lastname
+            <span *ngIf="!editForm"> &nbsp; &nbsp; {{lastname}} </span>
+            <ion-input
+                *ngIf="editForm"
+                type="text"
+                placeholder="Lastname"
+                [(ngModel)]="lastname">
+            </ion-input>
         </div>
+
         <div class="icon-fonts">
             <ion-icon ios="ios-call" md="md-call"></ion-icon>
-            &nbsp; &nbsp; Phone Number
+            <span *ngIf="!editForm"> &nbsp; &nbsp; {{phone}} </span>
+            <ion-input
+                *ngIf="editForm"
+                type="phone"
+                placeholder="phone"
+                [(ngModel)]="phone">
+            </ion-input>
         </div>
-        <div class="icon-fonts">
+        <div class="icon-fonts" >
             <ion-icon ios="ios-key" md="md-key"></ion-icon>
-            &nbsp; &nbsp; Unique Code
+            &nbsp; &nbsp; {{UniqueCode}}
         </div>
     </div>
     <div class="btn-edit user-contact">
-        <button ion-button round full>
+        <button
+            *ngIf="!editForm"
+            ion-button
+            (click)="editForm=true"
+            round full>
             Edit 
         </button>
+        <button *ngIf="editForm" ion-button round full>
+            Update 
+        </button>
     </div>
+    
     <div class="footer">
         <h6 style="font-size: smaller">www.stallionhaulage.com v1.0.1</h6>
     </div>
-
 </ion-content>

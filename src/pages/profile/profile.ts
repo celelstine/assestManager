@@ -14,8 +14,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
+  editForm: boolean = false;
+  email: string = 'test@demo.com';
+  firstname: string = 'Chidebere';
+  lastname: string = 'Nkwoge' 
+  phone: string = '+2348066112787';
+  UniqueCode: string = 'AE102X';
+  username: string = 'celebobo';
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+  ) {
+
   }
 
   ionViewDidLoad() {
